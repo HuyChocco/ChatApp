@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                     builder: (ctx, userSnapshot) {
                       if (userSnapshot.connectionState ==
                           ConnectionState.waiting) {
-                        return SplashScreen();
+                        return SplashScreen(); //tiny improve
                       }
                       if (userSnapshot.hasData) {
                         return ChatScreen();
